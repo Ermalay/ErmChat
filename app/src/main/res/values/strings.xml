@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Erm Chat</string>
+
+    <string name="article_test_text" formatted="false"><![CDATA[
+
+    <ital>съешь ещё этих</ital>
+    <b_bold>мягких французских булок </b_bold>
+    <fake_strike>да выпей чаю</fake_strike>
+
+    ]]></string>
+</resources>
