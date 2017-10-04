@@ -59,15 +59,15 @@ public class MainActivity extends AppCompatActivity {
             else if ("ital".equalsIgnoreCase(tag)) span = new AppearanceSpan(
                     0xffff2020,
                     AppearanceSpan.NONE,
-                    20,
+                    28,
                     false,
                     true,
                     false,
                     false);
             else if ("b_bold".equalsIgnoreCase(tag)) span = new AppearanceSpan(
-                    0xff00ff00,
+                    0xffff00ff,
                     AppearanceSpan.NONE,
-                    26,
+                    30,
                     true,
                     false,
                     false,
@@ -75,11 +75,19 @@ public class MainActivity extends AppCompatActivity {
             else if ("fake_strike".equalsIgnoreCase(tag)) span = new AppearanceSpan(
                     0xff0000ff,
                     AppearanceSpan.NONE,
-                    20,
+                    26,
                     false,
                     false,
                     true,
                     false);
+            else if ("all_custom".equalsIgnoreCase(tag)) span = new AppearanceSpan(
+                    0xff800000,
+                    AppearanceSpan.NONE,
+                    26,
+                    true,
+                    true,
+                    true,
+                    true);
             else if (tag.startsWith("color_")) span = new ParameterizedSpan(tag.substring(6));
             if (span != null) processSpan(opening, output, span);
         }
